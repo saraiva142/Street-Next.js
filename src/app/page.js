@@ -1,26 +1,31 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+'use client';
+
+import ParallaxImage from "./ParallaxImage";
+import { ReactLenis } from "@studio-freight/react-lenis";
+
+
 
 export default function Home() {
   return (
+    <ReactLenis root>
     <div className="app">
       <section className="hero">
         <div className="img">
-          <img src="/portraits/port1.jpg"/>
+          <ParallaxImage src="/portraits/port1.jpg"/>
         </div>
 
         <div className="nav">
-          <p>Tour</p>
-          <p>Updates</p>
-          <p>Contact</p>
-          <p>Merch</p>
+          <p>João</p>
+          <p>Saraiva</p>
+          <p>Root</p>
+          <p>Street</p>
         </div>
 
       </section>
 
       <section className="projects">
         <div className="img">
-          <img src="/portraits/port10.jpg"/>
+          <ParallaxImage src="/portraits/port10.jpg"/>
         </div>
 
         <div className="projects-brief">
@@ -32,25 +37,13 @@ export default function Home() {
 
         <div className="col projects-cover">
           <div className="img">
-            <img src="/portraits/port4.jpg"/>
+            <ParallaxImage src="/portraits/port4.jpg"/>
           </div>
         </div>
         <div className="col projects-list">
           <div className="project">
-            <h1>Sunrise</h1>
-            <p>Apple Music / Spotify / Youtube</p>
-          </div>
-          <div className="project">
-            <h1>Sunrise</h1>
-            <p>Apple Music / Spotify / Youtube</p>
-          </div>
-          <div className="project">
-            <h1>Sunrise</h1>
-            <p>Apple Music / Spotify / Youtube</p>
-          </div>
-          <div className="project">
-            <h1>Sunrise</h1>
-            <p>Apple Music / Spotify / Youtube</p>
+            <h1>STREET</h1>
+            <p>Free / Root / Cool</p>
           </div>
         </div>
       </section>
@@ -64,13 +57,13 @@ export default function Home() {
         </div>
         <div className="col portrait">
           <div className="portrait-container">
-            <img src="/portraits/port7.jpg"/>
+            <ParallaxImage src="/portraits/port7.jpg"/>
           </div>
         </div>
       </section>
       <section className="banner">
         <div className="img">
-          <img src="/portraits/port9.jpg"/>
+          <ParallaxImage src="/portraits/port9.jpg"/>
         </div>
 
         <div className="banner-copy">
@@ -88,11 +81,11 @@ export default function Home() {
           <p>Instagram / TikTok / Discord</p>
 
           <div className="footer-links">
-            <p>Menu</p>
-            <h1>Tour</h1>
-            <h1>Updates</h1>
-            <h1>Merch</h1>
-            <h1>Contact</h1>
+            <p>João</p>
+            <h1>Saraiva</h1>
+            <h1>Root</h1>
+            <h1>Freedom</h1>
+            <h1>Street</h1>
           </div>
 
           <p>&copy; Designed by João Saraiva</p>
@@ -106,7 +99,7 @@ export default function Home() {
 
           <div className="shop">
             <div className="img">
-              <img src="/portraits/port8.jpg"/>
+              <ParallaxImage src="/portraits/port8.jpg"/>
             </div>
           </div>
 
@@ -114,5 +107,6 @@ export default function Home() {
         </div>
       </section>
     </div>
+    </ReactLenis>
   );
 }

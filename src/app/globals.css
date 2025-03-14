@@ -1,3 +1,11 @@
+/* Importando a fonte personalizada */
+@font-face {
+  font-family: 'MinhaFonte';
+  src: url('/src/font/Mitera\ Regular.otf') format('woff2');
+  font-weight: normal; /* Define o peso padrão */
+  font-style: normal;  /* Define o estilo padrão */
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,15 +16,7 @@ html, body {
   width: 100%;
   height: 100%;
   background-color: #0f0f0f;
-  font-family: 'Roboto', sans-serif;
-}
-
-img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  will-change: transform;
+  font-family: 'MinhaFonte';
 }
 
 img {
@@ -25,13 +25,13 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: hidden;
+  object-fit: cover; /* Mantém a imagem cobrindo a tela */
 }
 
 h1 {
   color: #dbccc0;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 80px;
+  font-family: 'MinhaFonte';
+  font-size: 85px;
   font-weight: 400;
   letter-spacing: -1px;
   line-height: 1;
@@ -39,6 +39,7 @@ h1 {
 
 p {
   text-transform: uppercase;
+  font-family: 'MinhaFonte';
   color: #dbccc0;
   font-size: 14px;
   font-weight: 500;
@@ -60,7 +61,7 @@ button {
 
 section {
   position: relative;
-  width: 100vh;
+  width: 100vw;
   height: 100vh;
   overflow: hidden;
 }
@@ -79,8 +80,8 @@ section {
 }
 
 section.projects {
-  width: 100vh;
-  height: 125h;
+  width: 100vw;
+  height: 125vh;
   display: flex;
   gap: 10em;
 }
@@ -107,9 +108,10 @@ section.projects {
   flex: 2;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start; /* Deixa os itens alinhados ao topo */
+  align-items: center; 
   gap: 2em;
+  width: 100%; /* Certifica-se de ocupar a largura */
 }
 
 .projects {
@@ -117,6 +119,7 @@ section.projects {
   display: flex;
   flex-direction: column;
   gap: 1em;
+  align-items: center;
 }
 
 .about {
@@ -130,4 +133,75 @@ section.projects {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  padding: 1em;
 }
+
+.intro p {
+  width: 50%;
+  text-align: center;
+}
+
+.intro p:nth-child(1) {
+  text-decoration: underline;
+  margin-bottom: 0.5em;
+}
+
+.portrait .portrait-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-copy {
+  position: relative;
+  text-align: center;
+}
+
+.banner-copy h1 {
+  text-transform: uppercase;
+}
+
+.banner-copy p:nth-child(3) {
+  width: 75%;
+  margin: 1em auto;
+}
+
+.footer {
+  display: flex;
+  padding: 1em;
+  background-color: #68461f;
+}
+
+.footer h1 {
+  text-transform: uppercase;
+}
+
+.footer .col:nth-child(1) {
+  flex: 4;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer .col:nth-child(2) {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.shop {
+  position: relative;
+  width: 100%;
+  height: 50%;
+}
+
