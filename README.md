@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Root Street
 
-## Getting Started
+🚀 **Root Street** é um projeto estiloso e dinâmico, trazendo um site com efeitos parallax e uma experiência visual fluida para destacar o estilo de vida street.
 
-First, run the development server:
+## 🌟 Tecnologias Utilizadas
 
-```bash
+- [Next.js](https://nextjs.org/) - Framework React para desenvolvimento web
+- [React](https://react.dev/) - Biblioteca para construção da UI
+- [React Lenis](https://github.com/studio-freight/react-lenis) - Suavização de rolagem
+- CSS Customizado - Estilização moderna para um layout impactante
+
+## 📸 Capturas de Tela
+
+🚧 *Em breve* 🚧
+
+## 🎯 Funcionalidades
+
+✔️ Efeito Parallax em imagens com **React Lenis** e **ParallaxImage**
+✔️ Seções organizadas: Hero, Projects, About, Banner e Footer
+✔️ Design responsivo e moderno
+✔️ Navegação fluída
+✔️ Animações suaves
+
+## 📦 Instalação
+
+Para rodar o projeto localmente, siga os passos abaixo:
+
+```sh
+# Clone o repositório
+git clone https://github.com/seu-usuario/root-street.git
+
+# Acesse a pasta do projeto
+cd root-street
+
+# Instale as dependências
+npm install
+
+# Inicie o servidor de desenvolvimento
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+O projeto estará disponível em `http://localhost:3000/`.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🚀 Deploy
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+O projeto pode ser facilmente publicado em plataformas como [Vercel](https://vercel.com/) ou [Netlify](https://www.netlify.com/).
 
-## Learn More
+## 🛠 Estrutura do Projeto
 
-To learn more about Next.js, take a look at the following resources:
+```
+root-street/
+│-- public/
+│   ├── portraits/ (Imagens do projeto)
+│-- src/
+│   ├── components/
+│   │   ├── ParallaxImage.js
+│   ├── pages/
+│   │   ├── index.js (Página principal)
+│-- styles/
+│-- package.json
+│-- README.md
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📌 Contribuição
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Faça um **fork** do projeto
+2. Crie uma **branch** para sua feature (`git checkout -b minha-feature`)
+3. Commit suas mudanças (`git commit -m 'Adiciona nova feature'`)
+4. Faça um **push** para a branch (`git push origin minha-feature`)
+5. Abra um **Pull Request**
 
-## Deploy on Vercel
+## 📄 Licença
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+📜 Este projeto está sob a licença MIT - sinta-se livre para utilizá-lo e modificá-lo!
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+💻 Feito com ❤️ por **João Saraiva**
+
